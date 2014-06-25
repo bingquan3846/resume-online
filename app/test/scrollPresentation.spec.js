@@ -1,8 +1,9 @@
-describe('Zebrafy', function () {
-    it('should apply classes zebrafy-odd and zebrafy-even to each other table lines', function () {
+describe('scroll presentation', function () {
+    it('append items then fetch them', function () {
         var body = $('body');
-        body.scrollPresentation();
-        expect(body).isBoolean(true);
+        body.append("<ul id='target'><li data-href='hello'>hello</li></ul>");
+        //alert(body.html());
+        expect(body).toExist();
     });
 
 });

@@ -5,11 +5,52 @@
   $ = jQuery;
 
   $.fn.scrollPresentation = function(options) {
-    var obj, settings;
-    obj = $(this);
-    return settings = $.extend({
-      target: $(this)
+    var activeObject, fetchObjects, fetchTargets, getScrollHeight, process, targets;
+    this.obj = $(this);
+    this.$element = $(element).is('body') ? $(window) : $(element);
+    this.$body = $('body');
+    this.$scrollElement = this.$element.on('scroll.bs.scroll-spy.data-api', process);
+    this.settings = $.extend({
+      selector: this
     }, options);
+    getScrollHeight = function() {
+      return this.$scrollElement.scrollTop();
+    };
+    fetchTargets = function() {
+      var targetId;
+      targetId = [];
+      $(this.settings.selector).children("a").each(function() {
+        return targetId.push($(this).attr("data"));
+      });
+      return targetId;
+    };
+    fetchObjects = function(targets) {
+      var target, _i, _len;
+      for (_i = 0, _len = targets.length; _i < _len; _i++) {
+        target = targets[_i];
+        this.objects.push($("#" + target));
+      }
+      return this.objects;
+    };
+    activeObject = function(i) {
+      this.objects.removeClass("active");
+      $(this.objects[i]).addClass("active");
+      return true;
+    };
+    process = function() {
+      var height, i, _i, _len, _ref;
+      height = getScrollHeight();
+      _ref = this.objects;
+      for (_i = 0, _len = _ref.length; _i < _len; _i++) {
+        i = _ref[_i];
+        if (object.position.top() < height && this.objects[i + 1].position.top() > height) {
+          activeObject(object, i);
+        }
+      }
+      return true;
+    };
+    targets = fetchTargets();
+    return fetchObjects(targets);
   };
 
 }).call(this);
