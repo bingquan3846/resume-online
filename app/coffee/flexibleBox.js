@@ -4,8 +4,6 @@
 
   $ = jQuery;
 
-  this.parent = $(this).is("body") ? $(window) : $(this);
-
   this.objectHeight = [];
 
   this.objectTop = [];
@@ -13,12 +11,12 @@
   this.totalNumber = 0;
 
   $.fn.flexibleBox = function(options) {
-    var arrangeObjects, calculateColumnWith, objects, process, setCssObject, settings;
+    var arrangeObjects, calculateColumnWith, objects, parent, process, setCssObject, settings;
     objects = $(this).children(".box");
+    parent = $(this).is("body") ? $(window) : $(this);
     settings = $.extend({
       maxColumns: 3,
-      breakingWidth: [300, 700, 1024],
-      minColumnWidth: "300",
+      breakingWidth: [300, 480, 1024],
       maxWidth: "1024",
       gapWidth: "10",
       columnWidth: 0,
@@ -26,12 +24,11 @@
     }, options);
     calculateColumnWith = function() {
       var breaking, i, pwidth, _i, _len, _ref;
-      pwidth = $(this.parent).width();
+      pwidth = $(parent).width();
       if (pwidth >= settings.maxWidth) {
         settings.column = settings.maxColumns;
         settings.columnWidth = (settings.maxWidth - settings.maxColumns * settings.gapWidth) / settings.column;
       } else {
-        pwidth = $(window).width();
         _ref = settings.breakingWidth;
         for (i = _i = 0, _len = _ref.length; _i < _len; i = ++_i) {
           breaking = _ref[i];
@@ -39,21 +36,22 @@
             settings.column = i + 1;
           }
         }
+        if (pwidth < settings.breakingWidth[0]) {
+          settings.column = 1;
+        }
         settings.columnWidth = (pwidth - settings.gapWidth * settings.column) / settings.column;
       }
       return null;
     };
-    setCssObject = function(obj, i) {
-      var col, j, k, n, ratio, top, tops, _i, _j, _k, _l;
-      ratio = $(obj).attr("data-ratio") ? parseInt($(obj).attr("data-ratio")) : 0;
+    setCssObject = function(obj, m) {
+      var col, i, j, k, n, ratio, top, tops, _i, _j, _k, _l;
+      ratio = parseInt($(obj).attr("data-ratio")) ? parseInt($(obj).attr("data-ratio")) : 0;
       col = parseInt($(obj).attr("data-column")) ? parseInt($(obj).attr("data-column")) : 1;
       if (col >= settings.column) {
         col = settings.column;
       }
       k = Math.floor(this.totalNumber / settings.column);
       j = (this.totalNumber - col) % settings.column;
-      console.log(this.totalNumber + col);
-      console.log((k + 1) * settings.column);
       if (this.totalNumber + col > (k + 1) * settings.column) {
         col = (k + 1) * settings.column - this.totalNumber;
       }
@@ -87,7 +85,9 @@
           this.objectTop.push(0);
         }
       }
-      console.log(this.objectTop);
+      if (m + 1 === objects.length) {
+        $(parent).height($(obj).height() + this.objectTop[m] + settings.gapWidth);
+      }
       return null;
     };
     arrangeObjects = function() {

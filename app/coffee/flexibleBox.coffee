@@ -1,5 +1,4 @@
 $ = jQuery
-@parent = if $(this).is("body") then $(window) else $(this)
 @objectHeight = []
 @objectTop = []
 @totalNumber = 0
@@ -7,23 +6,25 @@ $ = jQuery
 
 $.fn.flexibleBox  = (options) ->
   objects = $(this).children(".box")
-  settings = $.extend {maxColumns :3,breakingWidth:[300,700,1024],minColumnWidth:"300",maxWidth:"1024",gapWidth:"10",columnWidth :0,column :4},options
+  parent = if $(this).is("body") then $(window) else $(this)
+  settings = $.extend {maxColumns :3,breakingWidth:[300,480,1024],maxWidth:"1024",gapWidth:"10",columnWidth :0,column :4},options
 
   calculateColumnWith = () ->
-    pwidth = $(@parent).width()
-
+    pwidth = $(parent).width()
+    #console.log pwidth
     if pwidth >= settings.maxWidth
       settings.column = settings.maxColumns
       settings.columnWidth = (settings.maxWidth - settings.maxColumns * settings.gapWidth) / settings.column
     else
-      pwidth = $(window).width()
       settings.column = i+1  for breaking, i  in settings.breakingWidth when  pwidth > settings.breakingWidth[i] and pwidth < settings.breakingWidth[i+1] and settings.breakingWidth[i+1]
+      if pwidth < settings.breakingWidth[0]
+        settings.column = 1
       settings.columnWidth = (pwidth-settings.gapWidth*settings.column) / settings.column
     null
 
-  setCssObject = (obj, i) ->
-    ratio = if $(obj).attr("data-ratio") then parseInt($(obj).attr("data-ratio")) else 0
-    col = if parseInt($(obj).attr("data-column")) then parseInt($(obj).attr("data-column")) else 1
+  setCssObject = (obj, m) ->
+    ratio = if parseInt($(obj).attr("data-ratio")) then parseInt($(obj).attr("data-ratio")) else 0
+    col = if parseInt($(obj).attr("data-column"))then parseInt($(obj).attr("data-column")) else 1
 
     if col >=settings.column
       col = settings.column
@@ -32,8 +33,6 @@ $.fn.flexibleBox  = (options) ->
     k = (@totalNumber) // settings.column
     #column
     j = (@totalNumber-col) % settings.column
-    console.log @totalNumber+col
-    console.log (k+1)*settings.column
 
     if @totalNumber+col > (k+1)*settings.column
       col = (k+1)*settings.column - @totalNumber
@@ -68,7 +67,10 @@ $.fn.flexibleBox  = (options) ->
     else
       $(obj).css('top', 0)
       @objectTop.push 0 for n in [col..1]
-    console.log @objectTop
+
+    if m+1 is objects.length
+      $(parent).height($(obj).height() + @objectTop[m] + settings.gapWidth)
+
     null
   arrangeObjects = () ->
     @objectHeight = []
