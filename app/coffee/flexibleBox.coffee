@@ -23,7 +23,7 @@ $.fn.flexibleBox  = (options) ->
 
   setCssObject = (obj, i) ->
     ratio = if $(obj).attr("data-ratio") then parseInt($(obj).attr("data-ratio")) else 0
-    col = if $(obj).attr("data-column") then parseInt($(obj).attr("data-column")) else 1
+    col = if parseInt($(obj).attr("data-column")) then parseInt($(obj).attr("data-column")) else 1
 
     if col >=settings.column
       col = settings.column

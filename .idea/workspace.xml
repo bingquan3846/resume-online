@@ -4,6 +4,7 @@
     <list default="true" id="5277e598-49b7-4dc1-b99d-492856c5cf87" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/coffee/flexibleBox.coffee" afterPath="$PROJECT_DIR$/app/coffee/flexibleBox.coffee" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/coffee/flexibleBox.js" afterPath="$PROJECT_DIR$/app/coffee/flexibleBox.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/coffee/scrollPresentation.coffee" afterPath="$PROJECT_DIR$/app/coffee/scrollPresentation.coffee" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="resume-online.iws" />
@@ -30,7 +31,7 @@
       <file leaf-file-name="scrollspy.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/js/libs/bootstrap/scrollspy.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="21" selection-start="1264" selection-end="1273" vertical-scroll-proportion="-20.692308" vertical-offset="6" max-vertical-offset="2601">
+            <state line="65" column="43" selection-start="2147" selection-end="2147" vertical-scroll-proportion="0.0" vertical-offset="1105" max-vertical-offset="2703">
               <folding />
             </state>
           </provider>
@@ -39,25 +40,34 @@
       <file leaf-file-name="flexibleBox.coffee" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/coffee/flexibleBox.coffee">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="8" selection-start="1200" selection-end="1200" vertical-scroll-proportion="-20.4" vertical-offset="0" max-vertical-offset="1632">
+            <state line="52" column="66" selection-start="1812" selection-end="1812" vertical-scroll-proportion="0.0" vertical-offset="697" max-vertical-offset="1632">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="flexibleBox.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="57" column="41" selection-start="2632" selection-end="2632" vertical-scroll-proportion="-25.5" vertical-offset="306" max-vertical-offset="2380">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="flexibleBox.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/coffee/flexibleBox.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="6" selection-start="1422" selection-end="1422" vertical-scroll-proportion="-0.45095542" vertical-offset="1102" max-vertical-offset="1989">
+            <state line="8" column="25" selection-start="158" selection-end="158" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="1989">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="scrollPresentation.coffee" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="scrollPresentation.coffee" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/coffee/scrollPresentation.coffee">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="17" selection-start="565" selection-end="565" vertical-scroll-proportion="-11.56" vertical-offset="0" max-vertical-offset="578">
+            <state line="92" column="0" selection-start="2758" selection-end="2758" vertical-scroll-proportion="0.9724047" vertical-offset="824" max-vertical-offset="1666">
               <folding />
             </state>
           </provider>
@@ -66,7 +76,7 @@
       <file leaf-file-name="scrollPresentation.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/coffee/scrollPresentation.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="6" selection-start="1565" selection-end="1565" vertical-scroll-proportion="0.0" vertical-offset="850" max-vertical-offset="1054">
+            <state line="50" column="6" selection-start="1565" selection-end="1565" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="1054">
               <folding />
             </state>
           </provider>
@@ -100,17 +110,17 @@
         <option value="$PROJECT_DIR$/app/test/scrollPresentation.spec.js" />
         <option value="$PROJECT_DIR$/app/js/main.js" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/app/coffee/scrollPresentation.coffee" />
         <option value="$PROJECT_DIR$/app/coffee/scrollPresentation.js" />
         <option value="$PROJECT_DIR$/app/coffee/flexibleBox.js" />
         <option value="$PROJECT_DIR$/app/coffee/flexibleBox.coffee" />
+        <option value="$PROJECT_DIR$/app/coffee/scrollPresentation.coffee" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="723" />
-    <option name="y" value="108" />
+    <option name="x" value="236" />
+    <option name="y" value="277" />
     <option name="width" value="1557" />
     <option name="height" value="1284" />
   </component>
@@ -140,7 +150,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -285,11 +294,13 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="SearchEverywhereHistory" value="" />
+    <property name="last_opened_file_path" value="$USER_HOME$/stilbezirk-html" />
     <property name="FullScreen" value="false" />
   </component>
   <component name="PublishConfig">
@@ -405,15 +416,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="723" y="108" width="1557" height="1284" extended-state="0" />
+    <frame x="236" y="277" width="1557" height="1284" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32920536" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.290378" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29073757" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2667108" sideWeight="0.70962197" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27465254" sideWeight="0.70926243" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -452,9 +463,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/css/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="86865">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="86865" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/css/main.css">
@@ -484,14 +493,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="13" selection-start="388" selection-end="388" vertical-scroll-proportion="0.19172932" vertical-offset="0" max-vertical-offset="798">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="63" selection-start="677" selection-end="677" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="2380" />
+        <state line="10" column="13" selection-start="388" selection-end="388" vertical-scroll-proportion="0.19172932" vertical-offset="0" max-vertical-offset="798" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/test/scrollPresentation.spec.js">
@@ -504,6 +506,13 @@
         <state line="359" column="0" selection-start="11525" selection-end="11525" vertical-scroll-proportion="-1.7235669" vertical-offset="6997" max-vertical-offset="13464" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/coffee/flexibleBox.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="25" selection-start="158" selection-end="158" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="1989">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/coffee/scrollPresentation.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="50" column="6" selection-start="1565" selection-end="1565" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1054">
@@ -511,30 +520,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/coffee/scrollPresentation.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="17" selection-start="565" selection-end="565" vertical-scroll-proportion="-11.56" vertical-offset="0" max-vertical-offset="578">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/js/libs/bootstrap/scrollspy.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="21" selection-start="1264" selection-end="1273" vertical-scroll-proportion="-20.692308" vertical-offset="6" max-vertical-offset="2601">
+        <state line="65" column="43" selection-start="2147" selection-end="2147" vertical-scroll-proportion="0.0" vertical-offset="578" max-vertical-offset="2601">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/coffee/flexibleBox.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="8" selection-start="1200" selection-end="1200" vertical-scroll-proportion="-20.4" vertical-offset="0" max-vertical-offset="1632">
+        <state line="52" column="66" selection-start="1812" selection-end="1812" vertical-scroll-proportion="0.0" vertical-offset="697" max-vertical-offset="1632">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/coffee/flexibleBox.js">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="6" selection-start="1422" selection-end="1422" vertical-scroll-proportion="-0.45095542" vertical-offset="1102" max-vertical-offset="1989">
+        <state line="57" column="41" selection-start="2632" selection-end="2632" vertical-scroll-proportion="-25.5" vertical-offset="306" max-vertical-offset="2380">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/coffee/scrollPresentation.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="92" column="0" selection-start="2758" selection-end="2758" vertical-scroll-proportion="0.9724047" vertical-offset="824" max-vertical-offset="1666">
           <folding />
         </state>
       </provider>

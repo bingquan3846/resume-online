@@ -46,7 +46,7 @@
     setCssObject = function(obj, i) {
       var col, j, k, n, ratio, top, tops, _i, _j, _k, _l;
       ratio = $(obj).attr("data-ratio") ? parseInt($(obj).attr("data-ratio")) : 0;
-      col = $(obj).attr("data-column") ? parseInt($(obj).attr("data-column")) : 1;
+      col = parseInt($(obj).attr("data-column")) ? parseInt($(obj).attr("data-column")) : 1;
       if (col >= settings.column) {
         col = settings.column;
       }
