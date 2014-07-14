@@ -11,6 +11,7 @@ $.fn.flexibleBox  = (options) ->
 
   calculateColumnWith = () ->
     pwidth = $(parent).width()
+
     #console.log pwidth
     if pwidth >= settings.maxWidth
       settings.column = settings.maxColumns
@@ -23,6 +24,7 @@ $.fn.flexibleBox  = (options) ->
     null
 
   setCssObject = (obj, m) ->
+
     ratio = if parseInt($(obj).attr("data-ratio")) then parseInt($(obj).attr("data-ratio")) else 0
     col = if parseInt($(obj).attr("data-column"))then parseInt($(obj).attr("data-column")) else 1
 
@@ -48,7 +50,6 @@ $.fn.flexibleBox  = (options) ->
 
 
     $(obj).width(settings.columnWidth * col + settings.gapWidth * (col-1))
-
     @objectHeight.push parseInt($(obj).height()) for i in [1..col]
 
 
@@ -72,18 +73,19 @@ $.fn.flexibleBox  = (options) ->
       $(parent).height($(obj).height() + @objectTop[m] + settings.gapWidth)
 
     null
+
   arrangeObjects = () ->
     @objectHeight = []
     @objectTop = []
     @totalNumber = 0
     setCssObject object, i for object, i in objects
     null
+
   process =() ->
     calculateColumnWith()
     arrangeObjects()
 
   process()
-
 
 
 

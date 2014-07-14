@@ -1,0 +1,2 @@
+describe "flexibleBox",->
+  $.fn.flexibleBox()

@@ -1,5 +1,5 @@
 // Karma configuration
-// Generated on Fri Jun 27 2014 16:21:44 GMT+0200 (CEST)
+// Generated on Wed Jul 02 2014 11:26:24 GMT+0200 (CEST)
 
 module.exports = function(config) {
   config.set({
@@ -14,10 +14,11 @@ module.exports = function(config) {
 
 
     // list of files / patterns to load in the browser
-      files: [
-          'app/js/libs/jquery/*.js',
-          'app/coffee/*.js'
-      ],
+    files: [
+      'app/js/libs/jquery/jquery.js',
+      'app/js/libs/jquery/jasmine-jquery.js',
+      'app/coffee/*.js'
+    ],
 
 
     // list of files to exclude
