@@ -11,11 +11,31 @@
     <link rel="stylesheet" href="app/css/main.css">
     <link rel="stylesheet" href="app/css/bootstrap.min.css">
     <link rel="stylesheet" href="app/css/jumbotron-narrow.css">
+    <style type="text/css">
+        .btn-circle {
+            width: 150px;
+            height: 150px;
+            text-align: center;
+            padding: 6px 0;
+            font-size: 12px;
+            line-height: 1.42;
+            border-radius: 50%;
+            display:table;
+        }
+        .btn-circle span{
+            line-height: 100%;
+            display:table-cell;
+            vertical-align:middle;
+        }
+        .container{
+            text-align: left;
+        }
+    </style>
 
     <script data-main="app/js/main" src="app/js/libs/require/require.js"></script>
     <script data-main="app/js/main" src="app/coffee/scrollPresentation.js"></script>
 </head>
-<body data-spy="scroll" data-target="#header">
+<body data-spy="scroll" data-target="#header" style="text-align: left">
 <div class="navbar navbar-default nav-justified navbar-fixed-top" role="navigation">
     <div class="container">
         <div class="navbar-header">
@@ -32,9 +52,11 @@
             <ul class="nav navbar-nav navbar-right">
                 <li class="active"><a href="#introduction">Introduction</a></li>
                 <li><a href="#education">Education</a></li>
-                <li><a href="#work">Work experience</a></li>
+                <li><a href="#work">Experience</a></li>
                 <li><a href="#skill">Skills</a></li>
-                <li><a href="#future">Future</a></li>
+                <li><a href="#language">Language</a></li>
+                <li><a href="#awards">Awards</a></li>
+                <li><a href="#hobby">Hobbys</a></li>
             </ul>
         </div><!--/.nav-collapse -->
     </div>
@@ -45,7 +67,7 @@
 <div id="introduction">
     <div class="jumbotron">
     <div class="container " >
-        <div class="alert" style="background: #449d44;float:right">
+        <div class="alert" style="background: #449d44;width:200px;">
             <p>About me</p>
         </div>
         <div class="clearfix"></div>
@@ -70,14 +92,33 @@
     </div>
 </div>
 
- <div id="education">
+<div id="education">
 
      <div class="jumbotron">
          <div class="container">
-             <div class="alert" style="background: #ec971f;float:left">
-                 <p>Education</p>
+             <div class="alert" style="background: #ec971f;width:200px">
+                 <p>EDUCATION</p>
              </div>
-
+             <div class="row">
+                 <div class="col-sm-4"><a href="http://www.uni-rostock.de/" class=" btn btn-default btn-circle" target="_blank"><span>2011-2013</span></a></div>
+                 <div class="col-sm-8">
+                     <h2><a href="http://www.uni-rostock.de/" target="_blank"> Rostock University</a></h2>
+                     <p>Computational engineering</p>
+                     <p>Master</p>
+                     <p>GPA 1.8 </p>
+                     <p>Focusing on Software Development(Design Pattern, Object orientated programming, Project orientated programming)</p>
+                 </div>
+             </div>
+             <div class="row">
+                 <div class="col-sm-4"><a href="http://en.hfut.edu.cn/index.php" class=" btn btn-default btn-circle" target="_blank"><span>2002-2016</span></a></div>
+                 <div class="col-sm-8">
+                     <h2><a href="http://en.hfut.edu.cn/index.php" target="_blank">Hefei University of technology</a></h2>
+                     <p>Applied Mathmatics</p>
+                     <p>Bachelor</p>
+                     <p>GPA 83.3/100 </p>
+                     <p>I donot know what and how I completed, it is very difficult, but maybe it is just a hobby, to meet challenge and solve problems</p>
+                 </div>
+             </div>
      </div>
 </div>
  </div>
@@ -85,8 +126,46 @@
 <div id="work">
     <div class="jumbotron">
         <div class="container">
-            <div class="alert" style="background: #d9534f;float:right">
-                <p>Work experience</p>
+            <div class="alert" style="background: #d9534f;width:200px">
+                <p>EXPERIENCE</p>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-4"><a href="#" class=" btn btn-default btn-circle" target="_blank"><span>2013-present</span></a></div>
+                <div class="col-sm-8">
+                    <h2>Web developer</h2>
+                    <p><a href="http://www.stilbezirk.de" target="_blank">Stilbezirk</a></p>
+                    <p>First job after graduataion from university in Germany, New knowledge and technics about website and design.</p>
+                    <p>These are projects I participated in </p>
+                    <ul class="list-group" style="text-align: left;">
+                        <li class="list-group-item-info list-group-item"><a href="http://www.uvex-sports.com" target="_blank">Uvex sports</a> </li>
+                        <li class="list-group-item-info list-group-item"><a href="http://www.alpina-sports.com" target="_blank">Alpina sports</a></li>
+                        <li class="list-group-item-info list-group-item"><a href="http://www.psyma.com" target="_blank">Psyma</a></li>
+                        <li class="list-group-item-info list-group-item"><a href="http://www.gatx.de" target="_blank">Gatx</a></li>
+                        <li class="list-group-item-info list-group-item"><a href="http://www.boardnerds.de" target="_blank">Boardnerds</a></li>
+                        <li class="list-group-item-info list-group-item"><a href="http://www.stilbezirk.de" target="_blank">Stilbezirk</a></li>
+                        <li class="list-group-item-info list-group-item"><a href="http://www.nutrison-flocare.de" target="_blank">Nutrison flocare</a></li>
+                        <li class="list-group-item-info list-group-item"><a href="http://www.neocate.de" target="_blank">Neocate</a></li>
+                        <li class="list-group-item-info list-group-item"><a href="http://www.fortimel.de" target="_blank">Fortimel</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4"><a href="#" class=" btn btn-default btn-circle" target="_blank"><span>2009-2011</span></a></div>
+                <div class="col-sm-8">
+                    <h2>PHP developer</h2>
+                    <p><a href="http://www.wildfire.asia" target="_blank">Wildfire</a> </p>
+                    <p>We use Zend framework and Joomla to develop admin system for staffs to cumminicate with customers, mailly work on our own system.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4"><a href="#" class=" btn btn-default btn-circle" target="_blank"><span>2007-2009</span></a></div>
+                <div class="col-sm-8">
+                    <h2>Typo3 developer</h2>
+                    <p><a href="http://www.aiqidesign.cn" target="_blank">AIQI</a> </p>
+                    <p>The first time I knew Typo3 and learned it in a half year to develop website for our customers. Even including extension development. After that
+                    I can build the whole website easily and love Typo3 so much more comparing with other cms.</p>
+                </div>
             </div>
         </div>
 
@@ -97,37 +176,92 @@
 <div id="skill">
     <div class="jumbotron">
         <div class="container">
-            <p>skill</p>
-            <p>skill</p>
-            <p>skill</p>
-            <p>skill</p>
-            <p>skill</p>
-            <p>skill</p>
-            <p>skill</p>
-            <p>skill</p>
-            <p>skill</p>
-            <p>skill</p>
-            <p>skill</p>
-            <p>skill</p>
-            <p>skill</p>
-            <p>skill</p>
-            <p>skill</p>
-            <p>skill</p>
+            <div class="alert" style="background: #ec971f;width:200px">
+                <p>SKILLS</p>
+            </div>
+            <ul class="list-group" style="text-align: left;">
+                <li class="list-group-item-info list-group-item">Typo3</li>
+                <li class="list-group-item-info list-group-item">Extbase Fluid</li>
+                <li class="list-group-item-info list-group-item">LAMP</li>
+                <li class="list-group-item-info list-group-item">zend framework</li>
+                <li class="list-group-item-info list-group-item">jQuery</li>
+                <li class="list-group-item-info list-group-item">CSS3 HTML5 </li>
+                <li class="list-group-item-info list-group-item">ASP.NET C# C++</li>
+                <li class="list-group-item-info list-group-item">OOP Design Patterns MVC</li>
+                <li class="list-group-item-info list-group-item">Git</li>
+                <li class="list-group-item-info list-group-item">Apache Ubuntu</li>
+                <li class="list-group-item-info list-group-item">Responsive Design</li>
+                <li class="list-group-item-info list-group-item">RESTful Facebook API Instagram API</li>
+                <li class="list-group-item-info list-group-item">Scrum Extreme Programming</li>
+                <li class="list-group-item-info list-group-item">PHPUnit</li>
+                <li class="list-group-item-info list-group-item">CoffeeScript Backbone.js Jasmine TDD</li>
+            </ul>
+
         </div>
 
     </div>
 
 </div>
-
-<div id="future">
+<div id="language">
     <div class="jumbotron">
         <div class="container">
-            <p>future</p>
+            <div class="alert" style="background: #ec971f;width:200px">
+                <p>Language</p>
+            </div>
+            <ul class="list-group" style="text-align: left;">
+                <li class="list-group-item-info list-group-item">English : fluent with GRE 321 Points</li>
+                <li class="list-group-item-info list-group-item">Chinese : native</li>
+                <li class="list-group-item-info list-group-item">German  : basic with B1</li>
+                <li class="list-group-item-info list-group-item">Japanese: basic with N2</li>
+            </ul>
+        </div>
+
+    </div>
+<div id="awards">
+    <div class="jumbotron">
+        <div class="container">
+            <div class="alert" style="background: #d9534f;width:200px">
+                <p>AWARDS</p>
+            </div>
+            <ul class="list-group" style="text-align: left;">
+                <li class="list-group-item-info list-group-item">2015 Special Top scholarship in University in China</li>
+                <li class="list-group-item-info list-group-item">2014 Third level scholarship in University in China</li>
+                <li class="list-group-item-info list-group-item">2013 Third level scholarship in University in China</li>
+            </ul>
         </div>
 
     </div>
 
 </div>
+
+
+
+
+
+    </div>
+<div id="hobby">
+        <div class="jumbotron">
+            <div class="container">
+                <div class="alert" style="background: #ec971f;width:200px">
+                    <p>HOBBYS</p>
+                </div>
+                <ul class="list-group" style="text-align: left;">
+                    <li class="list-group-item-info list-group-item">New staffs</li>
+                    <li class="list-group-item-info list-group-item">Music</li>
+                    <li class="list-group-item-info list-group-item">Computer game</li>
+                    <li class="list-group-item-info list-group-item">AI</li>
+                    <li class="list-group-item-info list-group-item">Sports</li>
+                    <li class="list-group-item-info list-group-item">Language</li>
+                    <li class="list-group-item-info list-group-item">Analysis</li>
+                </ul>
+            </div>
+            <div class="well-lg" style="text-align: left">I am a man kind of nerds, expecially learning new stuffs.... Life is limited , but learning is through the whole life</div>
+
+        </div>
+
+
+
+    </div>
 
 </div>
 </body>
