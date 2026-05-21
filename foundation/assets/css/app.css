@@ -5066,8 +5066,8 @@ body {
   align-items: center; }
   .swiper-slide .content {
     z-index: 99999;
-    color: limegreen;
-    font-size: 46px;
+    color: #af0;
+    font-size: 55px;
     font-weight: bold;
     display: none; }
     .swiper-slide .content .callout {
